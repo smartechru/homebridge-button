@@ -1,0 +1,31 @@
+{
+  "name": "homebridge-button",
+  "version": "1.0.0",
+  "description": "Homebridge plugin to control relay switch via Raspberry Pi GPIO pins",
+  "license": "MIT",
+
+  "keywords": [
+    "homebridge-plugin"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/praita/homebridge-button"
+  },
+
+  "dependencies": {
+    "rpio": "^0.9.16"
+  },
+
+  "engines": {
+    "homebridge": ">=0.4.20",
+    "node": ">=6.9.5"
+  },
+
+  "maintainers": [
+    {
+      "name": "praita",
+      "email": "p.raita@yandex.com"
+    }
+  ]
+}
