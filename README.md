@@ -21,8 +21,8 @@ Example `config.json`
 {
   "accessories": [
     {
-      "accessory": "ExtSwitch",
-      "name": "Button",
+      "accessory": "Button",
+      "name": "ButtonTest",
       "pin": 12,
       "out": 11
     }
