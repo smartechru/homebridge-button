@@ -4,7 +4,7 @@ var rpio = require('rpio');
 module.exports = function(homebridge) {
 	Service = homebridge.hap.Service;
 	Characteristic = homebridge.hap.Characteristic;
-	homebridge.registerAccessory("homebridge-button", "ExtSwitch", ButtonAccessory);
+	homebridge.registerAccessory("homebridge-button", "Button", ButtonAccessory);
 }
 
 function ButtonAccessory(log, config) {
