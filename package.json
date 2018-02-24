@@ -15,7 +15,7 @@
   },
 
   "dependencies": {
-    "request": "^2.65.0"
+    "request": "^2.65.0",
     "rpio": "^0.9.12"
   },
 
