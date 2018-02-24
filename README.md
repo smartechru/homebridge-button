@@ -11,7 +11,7 @@ It use rpio library to achieve that.
 ## Installation
 1.	Install Homebridge using `npm install -g homebridge`
 2.	Install this plugin using:
-    `git clone https://github.com/Paulraita/homebridge-button.git && cd homebridge-pirelays && sudo npm install `
+    `git clone https://github.com/Paulraita/homebridge-button.git && cd homebridge-button && sudo npm install `
 3.	Update your configuration file - see `config-sample.json` in this repo
 
 ## Configuration
