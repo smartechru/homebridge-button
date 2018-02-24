@@ -17,27 +17,24 @@ function ButtonAccessory(log, config) {
 	this.outpin = config["out"];
 
 	// rpio.open(this.pin, rpio.INPUT, rpio.HIGH);
-	rpio.open(this.outpin, rpio.OUTPUT, rpio.LOW);
+	rpio.open(this.outpin, rpio.OUTPUT);
 
 	// this.search();
 }
 
 ButtonAccessory.prototype.getOn = function(callback) {
-	this.buttonState = rpio.read(this.pin);
-	var btnOn = this.buttonState > 0;
-
-	this.log("Input PIN:%d is %d", this.pin, btnOn);
-	callback(null, btnOn);
+	this.log("Input PIN:%d is %d", this.pin, this.buttonState);
+	callback(null, this.buttonState);
 }
 
 ButtonAccessory.prototype.setOn = function(on, callback) {
+	this.log("Output PIN:%d to %d", this.outpin, on);
+	this.buttonState = on;
 	if (on) {
 		rpio.write(this.outpin, rpio.HIGH);
 	} else {
 		rpio.write(this.outpin, rpio.LOW);
 	}
-
-	this.log("Output PIN:%d to %d", this.outpin, on);
 	callback(null);
 }
 
