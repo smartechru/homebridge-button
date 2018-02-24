@@ -9,9 +9,8 @@ It use rpio library to achieve that.
 -	[Homebridge](https://github.com/nfarina/homebridge) - _HomeKit support for the impatient_
 
 ## Installation
-1.	Install Homebridge using `npm install -g homebridge`
-2.	Install this plugin using:
-    `git clone https://github.com/Paulraita/homebridge-button.git && cd homebridge-button && sudo npm install `
+1.	Install Homebridge using `sudo npm install -g homebridge`
+2.	Install this plugin using: `sudo npm install -g --unsafe-perm homebridge-button`
 3.	Update your configuration file - see `config-sample.json` in this repo
 
 ## Configuration
