@@ -11,8 +11,8 @@
 
   "accessories": [
     {
-      "accessory": "ExtSwitch",
-      "name": "Button",
+      "accessory": "Button",
+      "name": "ExtSwitch",
       "pin": 12,
       "out": 11
     }
